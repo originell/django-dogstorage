@@ -11,7 +11,15 @@ Therefore I have written this storage engine. In case a file is not found,
 an image from placedog.com_ will be used/displayed
 instead.
 
-If you are sick of dogs, you might want to check out _django-kittenstorage_.
+If you are sick of dogs, you might want to check out django-kittenstorage_ or django-apestorage_.
+
+sorl-thumbnail users
+====================
+
+Note that newer versions of sorl-thumbnail have an integrated dummy engine, which
+can load images from various dummy sources. This is super cool and I highly recommend
+this over dogstorage. Go and have a look at THUMBNAIL_DUMMY_.
+
 
 Setup
 =====
@@ -45,7 +53,9 @@ DOG_SIZE
     A tuple of format `(width, height)`, specifiying the size of the image 
     requested from placedog__.
 
-
+.. _django-kittenstorage: https://github.com/originell/django-kittenstorage/
+.. _django-apestorage: https://github.com/originell/django-apestorage/
+.. _THUMBNAIL_DUMMY: http://sorl-thumbnail.readthedocs.org/en/latest/reference/settings.html#thumbnail-dummy
 .. _placedog.com: http://placedog.com/
 __ placedog.com_
 
