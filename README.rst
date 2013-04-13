@@ -20,6 +20,14 @@ Note that newer versions of sorl-thumbnail have an integrated dummy engine, whic
 can load images from various dummy sources. This is super cool and I highly recommend
 this over dogstorage. Go and have a look at THUMBNAIL_DUMMY_.
 
+The setting for placeholder apes source would be:
+
+    ``THUMBNAIL_DUMMY_SOURCE = http://placedog.com/%(width)s/%(height)s``
+
+or if you prefer grayscale:
+
+    ``THUMBNAIL_DUMMY_SOURCE = http://placedog.com/g/%(width)s/%(height)s``
+
 
 Setup
 =====
